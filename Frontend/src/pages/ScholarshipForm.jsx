@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Navigate, useParams } from 'react-router-dom'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import { scholarshipSchema } from '../schemas/scholarshipSchema'
+import { scholarshipSchema } from './scholarshipSchema'
 
 const states = ['Maharashtra']
 const districts = [

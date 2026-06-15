@@ -3,10 +3,10 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "server": "npm run dev --prefix Backend_(server)",
-    "client": "npm run dev --prefix nsp-final_(FrontEnd)",
+    "server": "npm run dev --prefix Backend",
+    "client": "npm run dev --prefix Frontend",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "seed": "npm run seed --prefix Backend_(server)"
+    "seed": "npm run seed --prefix Backend"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"

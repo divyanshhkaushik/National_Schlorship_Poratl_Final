@@ -12,7 +12,6 @@ export default function LogoBar() {
           <img src={goiLogo} alt="Government of India" className="h-14 object-contain" />
           <img src={educationMinistry} alt="Ministry of Education" className="h-14 object-contain" />
           <img src={digitalIndia} alt="Digital India" className="h-14 object-contain" />
-          <img src={nsdcLogo} alt="NSDC" className="h-14 object-contain" />
         </div>
       </div>
     </div>
