@@ -1,4 +1,4 @@
-import nspLogo from '../assets/nsp-logo.svg'
+import nspLogo from '../assets/nsp.png'
 import { Link } from 'react-router-dom';
 
 export default function Footer() {
@@ -6,8 +6,8 @@ export default function Footer() {
     <footer className="bg-gradient-to-r from-green-700 via-primary to-green-800 text-white pt-10 pb-6 mt-12 text-base shadow-inner border-t border-green-900/20">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-stretch gap-8 px-4">
         <div className="flex-1 mb-8 md:mb-0 flex flex-col items-center md:items-start">
-          <div className="bg-white rounded-full p-2 mb-2 shadow">
-            <img src={nspLogo} alt="NSP Logo" className="h-16 w-16 object-contain" />
+          <div className="bg-primary rounded-full p-2 mb-2 shadow">
+            <img src={nspLogo} alt="NSP Logo" className="h-16 w-16 object-contain rounded-full" />
           </div>
           <div className="font-extrabold text-xl mb-1 text-center tracking-tight">National Scholarship Portal</div>
           <div className="text-green-200 mb-1 font-medium">Government of India | Ministry of Education</div>

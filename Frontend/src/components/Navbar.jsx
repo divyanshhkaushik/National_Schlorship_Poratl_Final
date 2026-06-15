@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
 import LogoBar from './LogoBar'
-import nspLogo from '../assets/nsp-logo.svg'
+import nspLogo from '../assets/nsp.png'
 
 export default function Navbar({ userType, onLogout }) {
   const navigate = useNavigate()
@@ -18,7 +18,7 @@ export default function Navbar({ userType, onLogout }) {
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
         {/* Brand */}
         <div className="flex items-center gap-5">
-          <img src={nspLogo} alt="NSP Logo" className="h-10 w-auto object-contain bg-white" />
+          <img src={nspLogo} alt="NSP Logo" className="h-10 w-auto object-contain bg-primary" />
           <div>
             <div className="font-bold text-2xl leading-tight">National Scholarship Portal</div>
             <div className="text-base text-green-200">Government of India</div>
