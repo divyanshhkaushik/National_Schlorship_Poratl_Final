@@ -1,0 +1,14 @@
+{
+  "name": "nsp-final-workspace",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "server": "npm run dev --prefix Backend_(server)",
+    "client": "npm run dev --prefix nsp-final_(FrontEnd)",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "seed": "npm run seed --prefix Backend_(server)"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
