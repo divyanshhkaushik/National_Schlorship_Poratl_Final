@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 
 export default function MyProfile() {
-  const [student, setStudent] = useState(null);
+  const [student, setStudent] = useState(null);  
   const [loading, setLoading] = useState(true);
   const [unauthorized, setUnauthorized] = useState(false);
 
@@ -58,7 +58,7 @@ export default function MyProfile() {
               </>
             )}
             <div className="grid grid-cols-2 gap-3 w-full mt-4 text-left">
-              <div><span className="font-medium">Aadhar:</span> {student?.aadhar ?? '-'}</div>
+              <div><span className="font-medium">Aadhar:</span> {student?.aadhar ?? '-'}</div> 
               <div><span className="font-medium">Gender:</span> {student?.gender ?? '-'}</div>
               <div><span className="font-medium">Institute Code:</span> {student?.instituteCode ?? '-'}</div>
               <div><span className="font-medium">DOB:</span> {student?.dob ?? '-'}</div>
@@ -70,5 +70,10 @@ export default function MyProfile() {
       </main>
       <Footer />
     </div>
+    //optional chaining student?.name ?? '-'.//The ?. (Optional Chaining) 
+    // ensures the app doesn't crash if student is null.
+    //The ?? '-' (Nullish Coalescing) provides a fallback. 
+    // If the backend didn't return a specific piece of data (like a missing mobile number),
+    //  it renders a dash (-) instead of leaving a blank space.
   );
 }
