@@ -5,10 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prebuild": "chmod +x node_modules/.bin/* 2>/dev/null || true",
+    "prebuild": "chmod +x node_modules/.bin/* 2>/dev/null || true",  
     "build": "vite build",
     "preview": "vite preview",
-    "server": "npm run dev --prefix ../Backend_(server)"
+    "server": "npm run dev --prefix ../Backend"
   },
   "dependencies": {
     "axios": "^1.7.9",
